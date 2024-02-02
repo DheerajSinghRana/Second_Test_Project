@@ -1,7 +1,7 @@
 version: '3.7'
 services:
   currency-exchange:
-    image: 83497/rimage
+    image: 83497/currency-exchange
     ports:
       - "8000:8000"
     restart: always
@@ -9,7 +9,7 @@ services:
       - currency-compose-network
 
   currency-conversion:
-    image: 83497/dimage
+    image: 83497/currency-conversion
     ports:
       - "8100:8100"
     restart: always
